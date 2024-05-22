@@ -13,4 +13,12 @@ function generatePassword() {
     return password;
 }
 
+// Unikalny Token:
+function generateUniqueToken() {
+  return crypto.randomUUID();
+}
+const token = generateUniqueToken();
+
 console.log(generatePassword());
+console.log(token)
+
